@@ -1,0 +1,11 @@
+
+# OS Files
+.DS_Store
+/captures
+
+# project files
+.idea
+**/build/
+**/*.iml
+.gradle
+/local.properties
