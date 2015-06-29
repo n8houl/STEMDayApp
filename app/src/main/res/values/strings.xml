@@ -2,4 +2,6 @@
     <string name="app_name">STEM Day</string>
 
     <string name="toolbar_image_description">Cover image</string>
+    <string name="fragment_login">login</string>
+    <string name="fragment_button">login</string>
 </resources>
