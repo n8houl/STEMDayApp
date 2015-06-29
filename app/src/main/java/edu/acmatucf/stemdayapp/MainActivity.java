@@ -13,6 +13,10 @@ public class MainActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.container, new FragmentLogin(), "fragment_login")
+                .commit();
     }
 
 }
