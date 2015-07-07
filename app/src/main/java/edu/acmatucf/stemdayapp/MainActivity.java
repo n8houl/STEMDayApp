@@ -6,6 +6,7 @@ import android.support.v7.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -15,8 +16,11 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.container, new FragmentLogin(), "fragment_login")
+                .replace(R.id.container, new FragmentSchedule(), "fragment_schedule")
                 .commit();
+
+
     }
+
 
 }
