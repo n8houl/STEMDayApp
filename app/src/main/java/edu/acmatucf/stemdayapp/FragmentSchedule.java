@@ -9,6 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import edu.acmatucf.stemdayapp.schedule.Schedule;
+
 public class FragmentSchedule extends Fragment {
 
     private ScheduleAdapter scheduleAdapter;
@@ -34,14 +36,9 @@ public class FragmentSchedule extends Fragment {
     public void onResume() {
         super.onResume();
 
-        String[] test = new String[50];
 
-        for (int i = 0; i < test.length; i++) {
-            test[i] = String.valueOf(i + 1);
 
-        }
-
-        scheduleAdapter.SetData(test);
+        scheduleAdapter.setSchedule(new Schedule());
 
     }
 }

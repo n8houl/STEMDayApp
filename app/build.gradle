@@ -21,6 +21,14 @@ android {
         }
     }
 
+    productFlavors{
+        normal{
+
+        }
+        demo{
+
+        }
+    }
     buildTypes {
         release {
             minifyEnabled true
