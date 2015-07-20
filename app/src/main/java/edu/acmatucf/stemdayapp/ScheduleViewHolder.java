@@ -18,6 +18,6 @@ public class ScheduleViewHolder extends RecyclerView.ViewHolder {
     }
 
     public void setScheduleItem(ScheduleItem item) {
-        myTextView.setText(item.getTitle());
+        myTextView.setText(item.getTitle() + "\n" + item.getLocation() + "\n" + item.getStartDate() + " - " + item.getEndDate());
     }
 }
